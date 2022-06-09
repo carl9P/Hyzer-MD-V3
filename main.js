@@ -124,10 +124,10 @@ global.reloadHandler = function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = 'Yahh! Beban nya nambah deh:(\nSelamat datang wahai Beban, di grup @subject\n\n@desc'
-  conn.bye = 'Sipp! Beban Berkurang satu'
-  conn.spromote = '@user sekarang admin!'
-  conn.sdemote = '@user sekarang bukan admin!'
+  conn.welcome = 'Yay! A new member joined us:(\nWelcome newbie, to group @subject\n\n@desc'
+  conn.bye = 'Goodbye💅🏻, Wish we never have to see you again!'
+  conn.spromote = '@user is now an admin!'
+  conn.sdemote = '@user is no longer admin!'
   conn.handler = handler.handler.bind(conn)
   conn.participantsUpdate = handler.participantsUpdate.bind(conn)
   conn.onDelete = handler.delete.bind(conn)
